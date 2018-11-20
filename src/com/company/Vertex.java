@@ -7,7 +7,8 @@ public class Vertex<Type> {
 
 
     public void setData(Type data) {
-
+        this.data = data;
+        if(data == "") throw new NoSuchElementException();
     }
 
 
