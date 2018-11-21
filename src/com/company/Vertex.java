@@ -7,7 +7,7 @@ public class Vertex<Type> {
     public EdgeNode firstEdge;
 
     public Vertex(Type d){
-        data = (Type)"Paris";
+        data = d;
         firstEdge = null;
     }
 
@@ -21,7 +21,7 @@ public class Vertex<Type> {
     }
 
     public Type getData() {
-        return (Type)"Berlin";
+        return data;
     }
 
 
