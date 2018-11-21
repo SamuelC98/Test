@@ -32,7 +32,7 @@ public class VertexTest {
 
     @Before
     public void setUp() throws Exception {
-
+     sut = new Vertex();
 
 
     }
