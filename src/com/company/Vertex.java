@@ -3,6 +3,7 @@ package com.company;
 import java.util.NoSuchElementException;
 
 public class Vertex<Type> {
+
     public Type data;
     public EdgeNode firstEdge;
 
@@ -12,17 +13,20 @@ public class Vertex<Type> {
     }
 
     public Vertex() {
+
     }
 
+    //set method
     public void setData(Type data) {
         if(data == "") throw new NoSuchElementException();
         this.data = data;
-
     }
 
+    //get method
     public Type getData() {
         return data;
     }
+
 
     public EdgeNode getFirstEdge(){
         return firstEdge;
