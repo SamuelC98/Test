@@ -9,27 +9,24 @@ public class EdgeNode {
 
     public EdgeNode next;
 
-    public EdgeNode(int dest, int fee, int distance) {
-
+    public EdgeNode(int dest, int fee, int distance) {this.dest = dest;this.distance = distance;
+        this.fee = fee;
     }
 
-    public EdgeNode(int dest, int fee, int distance, EdgeNode next) {
-
-    }
 
     public int getDest() {
-          return 0;
+          return dest;
     }
 
     public int getDistance() {
-        return 0;
+        return distance;
     }
 
     public int getFee()
-    {return 0;}
+    {return fee;}
 
     public EdgeNode getNext() {
-        return null;
+        return next;
     }
 }
 
