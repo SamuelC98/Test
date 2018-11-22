@@ -2,14 +2,13 @@ package com.company;
 
 public class EdgeNode {
     public int dest;
-
-
     public int distance;//
     public int fee;
-
     public EdgeNode next;
 
-    public EdgeNode(int dest, int fee, int distance) {this.dest = dest;this.distance = distance;
+    public EdgeNode(int dest, int fee, int distance) {
+        this.dest = dest;
+        this.distance = distance;
         this.fee = fee;
     }
 
@@ -22,8 +21,9 @@ public class EdgeNode {
         return distance;
     }
 
-    public int getFee()
-    {return fee;}
+    public int getFee() {
+        return fee;
+    }
 
     public EdgeNode getNext() {
         return next;
