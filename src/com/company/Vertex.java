@@ -25,7 +25,7 @@ public class Vertex<Type> {
     }
 
     public EdgeNode getFirstEdge(){
-        return null;
+        return firstEdge;
     }
 
 
