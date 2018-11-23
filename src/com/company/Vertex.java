@@ -33,17 +33,17 @@ public class Vertex<Type> {
     }
 
     public int getFirstEdgeDest(){
-        return 0;
+        return firstEdge.getDest();
 
     }
 
     public int getFirstEdgeFee(){
-        return 0;
+        return firstEdge.getFee();
 
     }
 
     public int getFirstEdgeDistance(){
-        return 0;
+        return firstEdge.getDistance();
 
     }
 
