@@ -1,6 +1,9 @@
 package com.company;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import java.lang.reflect.Type;
 import java.util.NoSuchElementException;
 import org.junit.Before;
@@ -19,15 +22,14 @@ public class VertexTest {
 
     private Type data;
     private Vertex sut;
-    private EdgeNode firstedge;
+    private EdgeNode firstEdge;
 
 
 
     @Before
     public void setUp() throws Exception {
      sut = new Vertex();
-        EdgeNode edge = mock(EdgeNode.class);
-        sut.firstEdge = edge;
+     sut.firstEdge = mock(EdgeNode.class);
 
     }
 
@@ -59,9 +61,31 @@ public class VertexTest {
     public void shouldTestGetFirstEdge(){
         assertEquals(sut.getFirstEdge(),sut.firstEdge);
 
+    }
+
+    @Test
+    public void shouldTestGetFirstEdgeDest(){
+        when(sut.firstEdge.getDest()).thenReturn(192);
+        assertEquals(192,sut.getFirstEdgeDest());
+        verify(sut.firstEdge).getDest();
 
     }
 
 
+    @Test
+    public void shouldTestGetFirstEdgeFee(){
+        when(sut.firstEdge.getFee()).thenReturn(11);
+        assertEquals(11,sut.getFirstEdgeFee());
+        verify(sut.firstEdge).getFee();
+
+    }
+
+    @Test
+    public void shouldTestGetFirstEdgeDistance(){
+        when(sut.firstEdge.getDistance()).thenReturn(22);
+        assertEquals(22,sut.getFirstEdgeDistance());
+        verify(sut.firstEdge).getDistance();
+
+    }
 
 }

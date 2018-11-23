@@ -32,5 +32,22 @@ public class Vertex<Type> {
         return firstEdge;
     }
 
+    public int getFirstEdgeDest(){
+        return 0;
+
+    }
+
+    public int getFirstEdgeFee(){
+        return 0;
+
+    }
+
+    public int getFirstEdgeDistance(){
+        return 0;
+
+    }
+
+
+
 
 }

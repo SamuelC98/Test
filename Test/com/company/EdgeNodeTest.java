@@ -49,4 +49,6 @@ public class EdgeNodeTest {
         assertEquals(4,sut.getNext().fee);
     }
 
+
+
 }
