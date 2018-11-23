@@ -32,16 +32,19 @@ public class Vertex<Type> {
         return firstEdge;
     }
 
+    //get destination of firstedge
     public int getFirstEdgeDest(){
         return firstEdge.getDest();
 
     }
 
+    //get fee of firstedge
     public int getFirstEdgeFee(){
         return firstEdge.getFee();
 
     }
 
+    //get distance in firstedge
     public int getFirstEdgeDistance(){
         return firstEdge.getDistance();
 
