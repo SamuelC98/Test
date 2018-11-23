@@ -19,6 +19,7 @@ public class SeqListTest {
     private Vertex v4;
 
 
+
     @Before
     public void setUp() throws Exception {
         sut = new SeqList<>();
